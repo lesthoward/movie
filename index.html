@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet"/>
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="./movie-seat-booking.css">
+    <script src="./movie-seat-booking.js" defer></script>
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="Movie seat booking, choose a multiple seats that are no occupied and book them so that it is displayed on the screen how much you have to pay for that">
+</head>
+<body>
+    <div class="container">
+        <div class="movie">
+            <div class="movie__top">
+                <div class="movie__label">Pick a movie:</div>
+                <select class="movie__select">
+                    <option class="movie__option" value="10">Avengers: Endgame (10$)</option>
+                    <option class="movie__option" value="12">Joker (12$)</option>
+                    <option class="movie__option" value="8">Toy Story 4 ($8)</option>
+                    <option class="movie__option" value="9">The Lion King (9)</option>
+                </select>
+                <!-- .movie__select -->
+
+            </div>
+            <!-- .movie__top -->
+
+            <ul class="movie__list">
+                <li class="movie__counter">
+                    <span class="movie__seat"></span>
+                    N/A
+                </li>
+                <li class="movie__counter">
+                    <span class="movie__seat movie__seat--selected"></span>
+                    Selected
+                </li>
+                <li class="movie__counter">
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    Occupied
+                </li>
+            </ul>
+
+            <div class="movie__screen"></div>
+            <!-- .movie__screen -->
+
+            <!-- .movie__list -->
+            <div class="movie__bottom">
+                <div class="movie__row">
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                </div>
+                <!-- .movie__row -->
+                <div class="movie__row">
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                </div>
+                <!-- .movie__row -->
+                <div class="movie__row">
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                </div>
+                <!-- .movie__row -->
+                <div class="movie__row">
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                </div>
+                <!-- .movie__row -->
+                <div class="movie__row">
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat "></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                </div>
+                <!-- .movie__row -->
+                <div class="movie__row">
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    <span class="movie__seat movie__seat--occupied"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                    <span class="movie__seat"></span>
+                </div>
+                <!-- .movie__row -->
+            </div>
+            <!-- .movie__bottom -->
+            
+            <p class="movie__description">
+                You have selected 
+                <span class="movie__count">0</span>
+                seats for a price of
+                <span class="movie__price">$0</span>
+            </p>
+        </div>
+        <!-- .movie -->
+    </div>
+</body>
+</html>
